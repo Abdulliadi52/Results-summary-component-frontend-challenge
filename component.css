@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+}
+.main {
+  /* max-width: 1200px; */
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(0, 0%, 100%);
+  max-height: auto;
+  border-radius: 20px;
+  width: 550px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.main .left {
+  width: 50%;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  padding: 50px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.left .res {
+  color: hsl(241, 100%, 89%);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.left .gr {
+  border: 1px solid transparent;
+  /* padding: 30px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  margin-bottom: 25px;
+}
+.left .gr h2 {
+  font-size: 50px;
+  color: white;
+}
+.left .gr p {
+  font-size: 12px;
+  color: hsl(241, 100%, 89%);
+}
+.left h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+.left .text {
+  color: hsl(241, 100%, 89%);
+  text-align: center;
+}
+.main .right {
+  width: 50%;
+  padding: 30px 20px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+}
+.right .sum {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.right #icon {
+  border: 1px solid transparent;
+  /* background-color: gainsboro; */
+  margin-bottom: 1.5rem;
+  padding: 7px 3px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+}
+.right #icon p {
+  padding-left: 0.7rem;
+  font-size: 15px;
+}
+.right #icon img {
+  padding-left: 0.8rem;
+}
+.right #icon span {
+  position: absolute;
+  right: 10px;
+  color: gainsboro;
+}
+.right #icon span b {
+  color: hsl(224, 30%, 27%);
+}
+.right .reaction {
+  background-color: hsl(0, 100%, 96%);
+}
+.right .memory {
+  background-color: hsl(39, 100%, 96%);
+}
+.right .verbal {
+  background-color: hsl(180, 100%, 96%);
+}
+.right .visual {
+  background: hsl(241, 100%, 96%);
+}
+.right .reaction p {
+  color: hsl(0, 100%, 67%);
+}
+.right div.memory p {
+  color: hsl(39, 100%, 56%);
+}
+.right div.verbal p {
+  color: hsl(166, 100%, 37%);
+}
+.right div.visual p {
+  color: hsl(234, 85%, 45%);
+}
+
+.right input {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px 5px;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  border: 1px solid transparent;
+}
+
+@media screen and (max-width: 490px) {
+  body {
+    padding: 0px;
+    width: 100%;
+    align-items: start;
+  }
+  .main {
+    flex-direction: column;
+    border-radius: 0px;
+  }
+  .main .left {
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    height: 320px;
+    padding: 15px;
+  }
+  .left .gr h2 {
+    font-size: 30px;
+    color: white;
+  }
+  .main .right {
+    width: 100%;
+  }
+}
